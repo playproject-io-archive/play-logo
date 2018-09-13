@@ -1,0 +1,25 @@
+{
+  "name": "play-logo",
+  "version": "1.0.0",
+  "description": "3d hexagon logo for project Play",
+  "main": "src/index.js",
+  "scripts": {
+      "start": "budo src/index.js:bundle.js --dir ./ --live --open",
+      "build": "browserify src/index.js > bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninabreznik/play-logo.git"
+  },
+  "keywords": [
+    "logo",
+    "svg",
+    "play"
+  ],
+  "author": "ninabreznik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninabreznik/play-logo/issues"
+  },
+  "homepage": "https://github.com/ninabreznik/play-logo#readme"
+}
