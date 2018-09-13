@@ -1,4 +1,4 @@
-module.exports(logo)
+module.exports = logo
 
 function logo (colors) {
   const polygon = (points, url, color) => {
