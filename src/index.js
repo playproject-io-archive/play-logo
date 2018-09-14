@@ -37,9 +37,9 @@ const middleRight = polygon([mTR, mBR, mB, iB, iBR, iTR], '#img1', colors[0])
 const outerRight = polygon([oT,oTR,oBR,mBR,mTR,mT], '#img2', colors[1])
 const innerRight = polygon([iT,iTR,iBR,iC], '#img2', colors[1])
 const middleLeft = polygon([mTL,iTL,iBL,iB,mB,mBL], '#img2', colors[1])
-const middleTop = polygon([mT,mTR,iTR,iT,iTL,mTL], '#img3', colors[3])
-const innerBottom = polygon([iC,iBR,iB,iBL], '#img3', colors[3])
-const outerBottom = polygon([mBR,oBR,oB,oBL,mBL,mB,mBR], '#img3', colors[3])
+const middleTop = polygon([mT,mTR,iTR,iT,iTL,mTL], '#img3', colors[2])
+const innerBottom = polygon([iC,iBR,iB,iBL], '#img3', colors[2])
+const outerBottom = polygon([mBR,oBR,oB,oBL,mBL,mB,mBR], '#img3', colors[2])
 
 return `
   <svg width="100" height="500" viewBox="0 -20 600 700">
