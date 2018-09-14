@@ -1,6 +1,6 @@
 {
   "name": "play-logo",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "3d hexagon logo for project Play",
   "main": "src/index.js",
   "scripts": {
