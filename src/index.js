@@ -3,6 +3,8 @@ module.exports = logo
 function logo (opts) {
   var colors = opts.colors
   var urls = opts.urls
+  var width = opts.width
+  var height = opts.height
 
   var scale = 3
   var scaleX = 1 * scale
@@ -53,7 +55,7 @@ function logo (opts) {
 
 var el = document.createElement('div')
 el.innerHTML = `
-  <svg width="100" height="500" viewBox="0 -20 600 700">
+  <svg width="${width}" height="${height}" viewBox="0 -20 600 700">
     <defs>
       <pattern id="img0" patternUnits="objectBoundingBox" width="1" height="1">
         <image xlink:href="${urls[0]}" x="0" y="0"/>
