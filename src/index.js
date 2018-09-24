@@ -27,7 +27,6 @@ function logo (opts) {
   var                          oB=`${X.CE},${Y.OB}`
 
   const polygon = (points, opts) => {
-    console.log(opts.fillType)
     if (opts.fillType === 'url') {
       return `<polygon style="fill:url(${opts.fill});stroke:black;stroke-width:2;"   points="${points.join(' ')}"></polygon>`
     } else {
