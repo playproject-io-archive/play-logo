@@ -51,19 +51,18 @@ function logo (opts) {
   }
 
 
-var defs
-
-return `
+var el = document.createElement('div')
+el.innerHTML = `
   <svg width="100" height="500" viewBox="0 -20 600 700">
     <defs>
       <pattern id="img0" patternUnits="objectBoundingBox" width="1" height="1">
-        <image xlink:href="https://i.imgur.com/fbTLZSo.jpg" x="0" y="0"/>
+        <image xlink:href="${urls[0]}" x="0" y="0"/>
       </pattern>
       <pattern id="img1" patternUnits="objectBoundingBox" width="1" height="1">
-        <image xlink:href="https://i.imgur.com/Q4qAH30.jpg" x="-1600" y="-600"/>
+        <image xlink:href="${urls[1]}" x="-1600" y="-600"/>
       </pattern>
       <pattern id="img2" patternUnits="objectBoundingBox" width="1" height="1">
-        <image xlink:href="https://i.imgur.com/sZK75ef.png" x="0" y="0"/>
+        <image xlink:href="${urls[2]}" x="0" y="0"/>
       </pattern>
     </defs>
     ${outerleft}                                    ${outerRight}
@@ -72,4 +71,6 @@ return `
                           ${innerBottom}
                           ${outerBottom}
   </svg>`
+
+return el.children[0]
 }
