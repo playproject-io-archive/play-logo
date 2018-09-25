@@ -1,6 +1,6 @@
 {
   "name": "play-logo",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "3d hexagon logo for project Play",
   "main": "src/index.js",
   "scripts": {
@@ -9,19 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ninabreznik/play-logo.git"
+    "url": "git+https://github.com/ethereum-play/play-logo.git"
   },
   "keywords": [
     "logo",
     "svg",
     "play"
   ],
-  "author": "ninabreznik",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ninabreznik/play-logo/issues"
+    "url": "https://github.com/ethereum-play/play-logo/issues"
   },
-  "homepage": "https://github.com/ninabreznik/play-logo#readme",
+  "homepage": "https://github.com/ethereum-play/play-logo#readme",
   "devDependencies": {
     "browserify": "^16.2.2",
     "budo": "^11.3.2"

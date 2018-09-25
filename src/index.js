@@ -50,27 +50,21 @@ function logo (opts) {
     else { return { fillType: 'noFill' , fill: 'transparent' } }
   }
 
-
-var el = document.createElement('div')
-el.innerHTML = `
-  <svg viewBox="0 0 600 800">
-    <defs>
-      <pattern id="img0" patternUnits="objectBoundingBox" width="1" height="1">
-        <image xlink:href="${urls[0]}" x="0" y="0"/>
-      </pattern>
-      <pattern id="img1" patternUnits="objectBoundingBox" width="1" height="1">
-        <image xlink:href="${urls[1]}" x="-1600" y="-600"/>
-      </pattern>
-      <pattern id="img2" patternUnits="objectBoundingBox" width="1" height="1">
-        <image xlink:href="${urls[2]}" x="0" y="0"/>
-      </pattern>
-    </defs>
-    ${outerleft}                                    ${outerRight}
-                           ${middleTop}
-        ${middleLeft}${innerLeft}${innerRight}${middleRight}
-                          ${innerBottom}
-                          ${outerBottom}
-  </svg>`
-
-return el.children[0]
+  var el = document.createElement('div')
+  el.innerHTML = `
+    <svg viewBox="0 0 600 800">
+      <defs>
+        ${urls.filter(x => !!x).map((url, i) => `
+          <pattern id="img${i}" patternUnits="objectBoundingBox" width="1" height="1">
+            <image xlink:href="${url}" x="${i === 1 ? -1600 : 0}" y="${i === 1 ? -600 : 0}"/>
+          </pattern>
+        `)}
+      </defs>
+      ${outerleft}                                    ${outerRight}
+                             ${middleTop}
+          ${middleLeft}${innerLeft}${innerRight}${middleRight}
+                            ${innerBottom}
+                            ${outerBottom}
+    </svg>`
+  return el.children[0]
 }
