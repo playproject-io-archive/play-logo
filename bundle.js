@@ -70,11 +70,11 @@ function logo (opts) {
   el.innerHTML = `
     <svg viewBox="0 0 600 800">
       <defs>
-        ${urls.filter(x => !!x).map((url, i) => `
+        ${urls.map((url, i) => url ? `
           <pattern id="img${i}" patternUnits="objectBoundingBox" width="1" height="1">
             <image xlink:href="${url}" x="${i === 1 ? -1600 : 0}" y="${i === 1 ? -600 : 0}"/>
           </pattern>
-        `)}
+        ` : '').join('')}
       </defs>
       ${outerleft}                                    ${outerRight}
                              ${middleTop}
