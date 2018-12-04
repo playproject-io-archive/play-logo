@@ -2,13 +2,14 @@
 var logo = require('./')
 
 var opts = {
-  urls: ['', 'https://i.imgur.com/Q4qAH30.jpg', 'https://i.imgur.com/sZK75ef.png'],  // if you have URL and color on the same position, URL overwrites it
+  // if you have URL and color on the same position, URL overwrites it
+  urls: ['', 'https://i.imgur.com/Q4qAH30.jpg', 'https://i.imgur.com/sZK75ef.png'],
   colors: ['red', 'blue', '']
 }
 
 var el = document.createElement('div')
-el.style.width = '100px'
-el.style.height = '100px'
+el.style.width = '900px'
+el.style.height = '900px'
 el.appendChild(logo(opts))
 
 document.body.appendChild(el)
@@ -68,7 +69,7 @@ function logo (opts) {
 
   var el = document.createElement('div')
   el.innerHTML = `
-    <svg viewBox="0 0 600 800">
+    <svg viewBox="0 -5 450 550" style="width: 100%; height: 100%;">
       <defs>
         ${urls.map((url, i) => url ? `
           <pattern id="img${i}" patternUnits="objectBoundingBox" width="1" height="1">

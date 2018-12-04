@@ -52,7 +52,7 @@ function logo (opts) {
 
   var el = document.createElement('div')
   el.innerHTML = `
-    <svg viewBox="0 0 600 800">
+    <svg viewBox="0 -5 450 550" style="width: 100%; height: 100%;">
       <defs>
         ${urls.map((url, i) => url ? `
           <pattern id="img${i}" patternUnits="objectBoundingBox" width="1" height="1">
