@@ -56,7 +56,7 @@ function logo (opts) {
       <defs>
         ${urls.map((url, i) => url ? `
           <pattern id="img${i}" patternUnits="objectBoundingBox" width="1" height="1">
-            <image xlink:href="${url}" x="${i === 1 ? -1600 : 0}" y="${i === 1 ? -600 : 0}"/>
+            <image xlink:href="${url}" x="0" y="0"/>
           </pattern>
         ` : '').join('')}
       </defs>
